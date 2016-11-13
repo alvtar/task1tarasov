@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class MainMenu extends MenuGeneratorImpl{
     
-    public int generate() {
+    public int getAnswer() {
         ArrayList<String> lst=new ArrayList<>();
         lst.add("");
         lst.add("MAIN MENU");
@@ -15,7 +15,7 @@ public class MainMenu extends MenuGeneratorImpl{
         lst.add("4 - Exit.");
         lst.add("----- ?: ");
         
-        return new MenuGeneratorImpl().getAnswer(lst);
+        return generate(lst);
     }
  
 }

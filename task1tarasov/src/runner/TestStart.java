@@ -16,7 +16,7 @@ public class TestStart {
  
         while (true) {
 
-            switch (menu.generate()) {
+            switch (menu.getAnswer()) {
             case 1: {
                 System.out.println("Clients="+ new CountSumClients().countSum(tarList.getTariffs()));
                 break;
@@ -27,7 +27,7 @@ public class TestStart {
             }
             case 3: {
                 //Select
-                output.showList((new SelectTariff().getSelected(tarList.getTariffs(),new SubMenu1().generate(),new SubMenu2().generate())));
+                output.showList((new SelectTariff().getSelected(tarList.getTariffs(),new SubMenu1().getAnswer(),new SubMenu2().getAnswer())));
                 break;
             }
             case 4: return;

@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 
 
-public class MenuGeneratorImpl implements MenuGenerator {
+public abstract class MenuGeneratorImpl implements MenuGenerator {
 
     @Override
-    public int getAnswer(ArrayList<String> choice) {
+    public int generate(ArrayList<String> choice) {
         
         for (String ch : choice) {
             System.out.println(ch);
@@ -22,6 +22,8 @@ public class MenuGeneratorImpl implements MenuGenerator {
         }
         return 0;
     }
-
+    @Override
+    public abstract int getAnswer(); 
+    
 
 }
