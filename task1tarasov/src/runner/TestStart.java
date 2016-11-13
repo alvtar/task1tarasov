@@ -11,7 +11,7 @@ public class TestStart {
     public static void main(String[] args) {
         
         TariffsList tarList=new TariffsList();
-        MainMenu menu =new MainMenu();  
+        MenuGenerator menu =new MainMenu();  
         Outputter output=new OutputterImpl(); 
  
         while (true) {
@@ -26,8 +26,8 @@ public class TestStart {
                 break;
             }
             case 3: {
-                //Select
-                output.showList((new SelectTariff().getSelected(tarList.getTariffs(),new SubMenu1().getAnswer(),new SubMenu2().getAnswer())));
+                output.showList((new SelectTariff().getSelected(tarList.getTariffs(), 
+                        new SubMenu1().getAnswer(),new SubMenu2().getAnswer())));
                 break;
             }
             case 4: return;
