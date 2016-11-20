@@ -7,6 +7,7 @@ import java.util.List;
 
 import domain.*;
 
+
 public class SortByFee {
      
         public List<Tariff> getSorted(List<Tariff> listIn) {
@@ -18,9 +19,8 @@ public class SortByFee {
                 public int compare(Tariff o1, Tariff o2) {
                     return o1.getFee().compareTo(o2.getFee());
                 }
-            });
-            
-            return listOut;
-          
+            });        
+            return listOut;       
         }
+        
 }

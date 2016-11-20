@@ -1,10 +1,16 @@
 package runner;
 
+/** Task 1, variant 12
+ * @author Tarasov Alexandr 
+ * 
+ * Class TestStart with main() method
+ * */
 
 import storage.*;
 import controller.*;
 import logic.*;
 import view.*;
+
 
 public class TestStart {
 
@@ -31,10 +37,7 @@ public class TestStart {
                 break;
             }
             case 4: return;
-            }
-       
+            }    
         }
-
-    }
-    
+    } 
 }

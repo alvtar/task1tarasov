@@ -10,7 +10,9 @@ public class CorporateTariff extends Tariff {
     public void setDiscountPercent(int discountPercent) {
         this.discountPercent = discountPercent;
     }
- 
+    
+    // This method returns "real" Fee - % of Discount
+    // (only for demonstrate Polymorphism)
     @Override
     public Integer getFee() {
         return fee*(100-discountPercent)/100;

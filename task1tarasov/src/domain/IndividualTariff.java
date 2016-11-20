@@ -8,6 +8,4 @@ public class IndividualTariff extends Tariff {
         return fee;
     }
 
-
-   
 }

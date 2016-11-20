@@ -6,6 +6,7 @@ import domain.*;
 
 import java.util.ArrayList;
 
+
 public class TariffsList {
     private List<Tariff> tariffs;
     

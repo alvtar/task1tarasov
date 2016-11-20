@@ -2,8 +2,9 @@ package logic;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import domain.Tariff;
+
+
 public class SelectTariff {
     
     public List<Tariff> getSelected(List<Tariff> listIn, int minFee, int maxFee){
@@ -15,8 +16,7 @@ public class SelectTariff {
             if (fee>=minFee & fee<=maxFee) {
                 listOut.add(tar);
             }
-        }
-        
+        }   
         return listOut;
     }
 

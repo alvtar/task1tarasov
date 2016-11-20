@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
-
 public abstract class MenuGeneratorImpl implements MenuGenerator {
 
     @Override
@@ -25,5 +24,4 @@ public abstract class MenuGeneratorImpl implements MenuGenerator {
     @Override
     public abstract int getAnswer(); 
     
-
 }

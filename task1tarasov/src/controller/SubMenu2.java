@@ -2,6 +2,7 @@ package controller;
 
 import java.util.ArrayList;
 
+
 public class SubMenu2 extends MenuGeneratorImpl {
 
     public int getAnswer() {
@@ -13,6 +14,5 @@ public class SubMenu2 extends MenuGeneratorImpl {
         
         return generate(lst);
     }
- 
-    
+   
 }
