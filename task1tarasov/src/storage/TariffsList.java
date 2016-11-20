@@ -16,7 +16,7 @@ public class TariffsList {
     
     public TariffsList() {             
         tariffs = new ArrayList<>(); 
-        Tariff tariff;// = null;
+        Tariff tariff = null;
         tariff = new IndividualTariff();
         tariff.setTitle("Рациональный");
         tariff.setFee(1000);

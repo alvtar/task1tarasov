@@ -6,6 +6,7 @@ public class MainMenu extends MenuGeneratorImpl{
     
     public int getAnswer() {
         ArrayList<String> lst=new ArrayList<>();
+        
         lst.add("");
         lst.add("MAIN MENU");
         lst.add("Make your choice:");

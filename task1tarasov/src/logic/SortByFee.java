@@ -10,9 +10,9 @@ import domain.*;
 
 public class SortByFee {
      
-        public List<Tariff> getSorted(List<Tariff> listIn) {
-           
+        public List<Tariff> getSorted(List<Tariff> listIn) {    
             List<Tariff> listOut=new ArrayList<>();
+            
             listOut.addAll(listIn);
             
             Collections.sort(listOut, new Comparator<Tariff>()  {

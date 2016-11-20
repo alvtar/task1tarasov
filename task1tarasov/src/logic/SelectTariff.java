@@ -13,6 +13,7 @@ public class SelectTariff {
         
         for (Tariff tar:listIn) {
             int fee=tar.getFee();
+            
             if (fee>=minFee & fee<=maxFee) {
                 listOut.add(tar);
             }
